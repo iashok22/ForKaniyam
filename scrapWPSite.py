@@ -4,9 +4,9 @@ import json
 import smtplib
 
 #print(len(sys.argv))
-url = 'http://kaniyam.com'
-from_range = '2021-04-01T00:00:00'
-to_range = '2021-04-22T00:00:00'
+url = sys.argv[1]
+from_range = sys.argv[2]+'T00:00:00'
+to_range = sys.argv[3]+'T00:00:00'
 #email = sys.argv[4]
 url_to_hit = url + '/wp-json/wp/v2/posts?after=' + from_range + '&before=' + to_range + '&per_page=100'
 r  = requests.get(url_to_hit)
