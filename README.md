@@ -2,6 +2,11 @@
 
 ### Command to run:
 ```
+python3 scrapWPSite.py http://kaniyam.com after_date before_date
+```
+
+#### Sample:
+```
 python3 scrapWPSite.py http://kaniyam.com 2021-04-01 2021-04-22
 ```
 
